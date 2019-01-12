@@ -63,6 +63,9 @@
   </div>
 
   <script type="text/javascript">
+  app.get("/", function(req, res) {
+  res.json(path.join(__dirname, "public/index.html"));
+});
     // Question: What does this code do?
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
